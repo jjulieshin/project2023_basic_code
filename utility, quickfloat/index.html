@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelperClass</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+    <section class="helperClass" id="helperClass">
+        <h2>Two helper classes (ie: “clearfix” and “quick floats")</h2>
+        <h3>1. Clearfix</h3>
+        <p>The "clearfix" is a popular technique used to clear floated elements within a container. When elements are
+            floated, they are taken out of the normal flow of the document, which can cause issues with the layout. The
+            clearfix technique ensures that the container expands to accommodate the floated elements and prevents it
+            from collapsing.
+            Here's an example of the clearfix technique in CSS:</p>
+        <div class="container displayCode no-print">
+            <div class="clearFixexample">
+                .container::after {<br>
+                content: "";<br>
+                display: table;<br>
+                clear: both;<br>
+                }
+            </div>
+        </div>
+
+        <p> In the above example, the "::after" pseudo-element is used to create a clearing element after the container.
+            The "clear: both" property ensures that the container clears both left and right floated elements.
+
+        </p>
+        <h3>2.Quick Floats</h3>
+        <p>"Quick floats" is not a standard term in CSS. It might refer to a quick and simple way to float an element to
+            the left or right within its parent container.
+            To float an element, you can use the float property in CSS. Here's an example:
+        </p>
+
+        <div class="container displayCode no-print">
+            <div class="floatExample">
+                .float-left {<br>
+                float: left;<br>
+                }<br>
+
+
+                .float-right {<br>
+                float: right;<br>
+                }<br>
+            </div>
+        </div>
+
+        <p>In the above example, the "float-left" class floats the element to the left, while the "float-right"
+            class floats it to the right. These classes can be applied to HTML elements to position them
+            accordingly.</p>
+
+
+</body>
+
+</html>

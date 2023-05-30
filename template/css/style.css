@@ -1,0 +1,33 @@
+.displayCode {
+  display: none;
+  background-color: #eee;
+  margin: 0 10%;
+  background-color:  #eee;;
+  margin: 0 10% 0 10%;
+}
+.helperClass .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .helperClass .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.clearFixexample, .floatExample{
+  padding: 20px;
+  margin: 20px; 
+}

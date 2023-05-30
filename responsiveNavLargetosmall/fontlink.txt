@@ -1,0 +1,29 @@
+facebook
+<i class="fa-brands fa-facebook"></i>
+instagram
+<i class="fa-brands fa-instagram"></i>
+linkedin
+<i class="fa-brands fa-linkedin"></i>
+youtube
+<i class="fa-brands fa-youtube"></i>
+contact
+<i class="fa-solid fa-address-card"></i>
+햄버거
+<i class="fa-solid fa-bars"></i>
+angle-right
+<i class="fa-solid fa-angle-right"></i>
+angle-left
+<i class="fa-solid fa-angle-left"></i>
+caret-up
+<i class="fa-solid fa-caret-up"></i>
+caret-down
+<i class="fa-solid fa-caret-down"></i>
+mail(envelope)
+<i class="fa-solid fa-envelope"></i>
+기타
+
+<i class="fa-solid fa-guitar"></i>
+Drumsteelpan
+<i class="fa-solid fa-drum-steelpan"></i>
+drum
+<i class="fa-solid fa-drum"></i>

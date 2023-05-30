@@ -1,0 +1,94 @@
+/*****TOGGLE MENU*****/
+.navToggle {
+    cursor: pointer;
+ }
+ 
+ 
+ .offScreenWrap {
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    bottom:0;
+    left: -12rem;
+    width: 12rem;
+    transition: transform .5s ease-out;
+ }
+ 
+ 
+ .offScreenOpen main,
+ .offScreenOpen .offScreenWrap {
+    transform: translate(12rem);
+ }
+ 
+ 
+ .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+ }
+ /****NAV****/
+ nav { margin-top: 5rem; }
+ 
+ 
+ #nav a {
+    color: #fff;
+    display: block;
+ }
+ 
+ 
+ #nav a:hover { color: var(--main-accent-color); }
+ 
+ 
+ #nav li a {
+ display: block;
+ padding: 0;
+ text-decoration: none;
+ width: 12rem; /* this is the width of the menu items */
+ line-height: 35px; /* this is the hieght of the menu items */
+ color: #fff;
+ }
+ 
+ 
+ #nav li li a {
+    width: 15em;
+    text-align: left;
+    margin-left: 1em;
+ /*    font-size:80%;*/
+ }
+ 
+ 
+ #nav li li:hover {background: var(--accent-color-dark);}
+ /*#nav li:hover {background:darkslategray;}  */
+ /*highlights current hovered list item and the parent list items when hovering over sub menues */
+ 
+ 
+ #nav ul {
+ position: absolute;
+ padding: 0;
+ left: 0;
+ display: none; /* hides sublists */
+ margin-left: 200px;
+ margin-top: -35px;
+ }
+ 
+ 
+ #nav li:hover ul ul {display:none;} /* hides sub-sublists */
+ 
+ 
+ #nav li:hover ul {
+    display: block;
+    background-color: black;
+    margin-left: 12em;
+    width: 20em;
+ } /* shows sublist on hover */
+ 
+ 
+ #nav li li:hover ul {
+ display:block; /* shows sub-sublist on hover */
+ margin-left:12em; 
+ /*    this should be the same width as the parent list item */
+ margin-top:-35px; /* aligns top of sub menu with top of list item */
+ }
+ 

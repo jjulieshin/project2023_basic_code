@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font source sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+    <h1>This is the side navbar sample</h1>
+    <h3>You can press the toggle menu and it expanded menu bar</h3>
+    <!--TOGGLE MENU-->
+    <div class="offScreenWrap">
+        <nav>
+            <ul id="nav">
+                <li><a href="#"><span class="logo">G1</span></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Concert</a>
+                    <ul>
+                        <li><a href="#">About Musician</a></li>
+                        <li><a href="#">Tour Schedule</a></li>
+                        <li><a href="#">Buy Ticket</a></li>
+                    </ul>
+                <li><a href="#">Instrument</a>
+                <li><a href="#">Music Lesson</a></li>
+                <li><a href="#l">Contact</a></li>
+                <li><a href="#" target="_blank"><i
+                            class="fa-brands fa-linkedin fa"></i></a></li>
+                <li><a href="#" target="_blank"><i
+                            class="fa-brands fa-youtube fa"></i></a></li>
+                <li><a href="#" target="_blank"><i
+                            class="fa-light fa-pen-nib fa"></i></a></li>
+                <li><a href="#" target="_blank"><i
+                            class="fa-brands fa-wordpress-simple fa"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <main>
+        <div class="navBar">
+            <a href="#" class="navToggle">Menu</a>
+            <a href="#">Contact</a>
+        </div>
+    </main>
+</body>
+
+</html>

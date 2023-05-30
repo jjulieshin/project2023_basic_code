@@ -1,0 +1,154 @@
+
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+} 
+.bodyGrid {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+header {
+    padding: 10px;
+    grid-area: header;
+    background-color: #d7bee2;
+}
+
+main {
+    grid-area: main;
+    background-color: #a9c7d8;
+    padding: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #c0df9f;
+    padding: 10px;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+/* 중첩 */
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ece3e3;
+    font-size: 1.2em;
+    font-weight: bold;
+    height:auto;
+}
+
+.nItem1 {
+    background-color: #d7bee2;
+}
+
+.nItem2 {
+    background-color: #a9c7d8;
+}
+
+.nItem3 {
+    background-color: #c0df9f;
+}
+
+.nItem4 {
+    background-color: #f2e5a6;
+}
+
+.nItem5 {
+    background-color: #e89d9d;
+}
+
+.nItem6 {
+    background-color: #d7bee2;
+}
+
+.nItem7 {
+    background-color: #a9c7d8;
+}
+
+.nItem8 {
+    background-color: #c0df9f;
+}
+
+.nItem9 {
+    background-color: #f2e5a6;
+}
+
+.nItem10 {
+    background-color: #e89d9d;
+}
+
+.nItem11 {
+    background-color: #ccc;
+}
+
+.nItem12 {
+    background-color: #ddd;
+}
+
+.container {
+   width: 100%;
+   height: auto;
+   /* display: grid; */
+   /* grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: repeat(12, 1fr); */
+    /* padding: 10px; */
+}
+
+
+@media screen and (min-width: 600px) {
+    .bodyGrid {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: grid;
+    
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 80px auto 50px;
+        grid-template-areas:
+            'header header'
+            'main aside'
+            'footer footer';
+
+
+    }
+
+    .container {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(120px, auto);
+        grid-gap: 10px;
+      
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(130px, auto);
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 10px;
+    }
+}
